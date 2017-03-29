@@ -62,9 +62,11 @@ abstract public class AppFinder
             // Quick hack rather than doing XML properly
             foreach (string s in output)
             {
+				ValkyrieDebug.Log ("-> " + s + "\n");
+				ValkyrieDebug.Log ("End");
                 if (s.IndexOf("/" + Executable()) > 0)
                 {
-                    location = s.Trim();
+					location = "/Users/foskon/Library/Application Support/Steam/steamapps/common/Mansions of Madness/Mansions of Madness.app";
                 }
             }
         }
